@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modip porfolio</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+</head>
+<body>
+ 
+    <!-- header section starts  -->
+
+    <header class="header">
+            <nav class="navbar">
+                <ul class="menu">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li> 
+                    <li><a href="#porfolio">porfolio</a></li> 
+                    <li><a href="#contact">contact</a></li> 
+                </ul>
+            </nav>
+            <div class="menu-btn" id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Hi there i am Modip</h3>
+            <p>i am web and mobile developer,<br> technologies enthousiast <br> i m also physcics enthousiast.</p>
+            <a href="#about" class="btn">About Me</a>
+        </div>
+        <div class="profil-img">
+            <img src="./images/modipprofile2-removebg-preview.png" alt="img-modip">
+        </div>
+    </section>
+
+<div id="about">
+    <h1 class="heading"> <span>about</span> me </h1>
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/modipprofil-removebg-preview.png" alt="img-modip">
+            </div>
+            <div class="about-col-2">
+                <div class="content">
+                    <h3>I can help you for your project</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui ea ullam, enim tempora ipsum fuga alias quae ratione a officiis id temporibus autem? Quod nemo facilis cupiditate. Ex, vel?</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li>
+                                <span>2020-2021</span><br>certificate Web and Mobile developer at Simplon Senegal
+                            </li>
+                            <li>
+                                <span>2018</span><br> License Physics at Cheikh Anta DIOP university 
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li>
+                                <span>web development</span><br>Laravel, Django, html, css, js
+                            </li>
+                            <li>
+                                <span>mobile development</span><br> Flutter
+                            </li>
+                        </ul>
+        
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>mobile development 2022</span><br>Mobile app development for android and ios
+                            </li>
+                            <li>
+                                <span>web mobile development 2022</span><br>Mobile app development for android and ios
+                            </li>
+                            <li>
+                                <span>web development 2021</span><br>Web app development
+                            </li>
+                        </ul>
+        
+                    </div>
+                    <a href="#" class="btn">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- porfolio section starts  -->
+
+<section class="porfolio" id="porfolio">
+
+    <h1 class="heading">por<span> folio </span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="images/modipbook1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3 class="title">Mobile application library</h3>
+                <span>by admin / 21st may, 2021</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta.</p>
+                <a href="https://github.com/Modip/modip_books_flutter" class="btn">see the github</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/cfp.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3 class="title">Mobile application school</h3>
+                <span>by admin / 21st may, 2021</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta.</p>
+                <a href="https://github.com/Modip/CFP_Flutter" class="btn">see the github</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/blog-3.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3 class="title">tasty and refreshing coffee</h3>
+                <span>by admin / 21st may, 2021</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section> 
+
+<!-- porfolio section ends -->
+
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span>contact</span> me </h1>
+
+    <div class="row">
+
+        <form action="">
+            <div class="inputBox">
+                <span class="fas fa-user"></span>
+                <input type="text" placeholder="name">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-envelope"></span>
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-phone"></span>
+                <input type="number" placeholder="number">
+            </div>
+            <input type="submit" value="contact now" class="btn">
+        </form>
+
+    </div>
+
+</section> -->
+
+<!-- contact section ends -->
+
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="share">
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-whatsapp"></a>
+        <a href="#" class="fab fa-facebook-f"></a>
+
+    </div>
+
+    <div class="links">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#porfolio">porfolio</a>
+        <a href="#contact">contact</a>
+       
+    </div>
+
+    <div class="credit">created by <span>Modip</span></div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+<!-- custom js file link  -->
+<script src="js/script.js">
+</script>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+</body>
+</html>
