@@ -108,6 +108,7 @@ section{
 }
 
 .header .navbar a{
+    display: inline;   
     padding: 2px 30px;
     margin: 0 2px;
     font-size: 1.4rem;
@@ -159,13 +160,6 @@ section{
     transform: scaleY(1);
 }
 
-.header .search-form input{
-    height: 100%;
-    width: 100%;    font-size: 1.6rem;
-    color:var(--black);
-    padding:1rem;
-    text-transform: none;
-}
 
 .header .search-form label{
     cursor: pointer;
@@ -178,14 +172,7 @@ section{
     color:var(--main-color);
 }
 
-.header .cart-items-container{
-    position: absolute;
-    top:100%; right: -100%;
-    height: calc(100vh - 9.5rem);
-    width: 35rem;
-    background: #fff;
-    padding:0 1.5rem;
-}
+
 
 
 
@@ -255,23 +242,33 @@ section{
     font-size: 3rem;
     color:#fff;
     margin: 5 10px;
+    
 }
 #about .row .content a{
     margin-left: 10px;
     text-align: center;
+
+    
 }  
 
 #about .row .content p{
-    font-size: 1.6rem;
-    color:#fff;
-    padding:1rem 0;
+
+
+    font-size: 2rem;
+    font-weight: lighter;
     line-height: 1.8;
-    margin-left: 10px;
+    padding:1rem 0;
+    color:#eee;
 }
 .tab-titles{
     display: flex;
     margin: 5px 0 10px;
     margin-left: 10px;
+    font-weight: 550;
+    transition: all .40s ease; 
+    color:  var(--text-color);
+
+
 
 }
 
@@ -283,6 +280,7 @@ section{
     cursor: pointer;
     font-weight: 500;
     position: relative;
+
 }
 .tab-links:hover{
     background: var(--main-color);
@@ -349,11 +347,7 @@ section{
 }
 
 
-.menu .box-container .box .price span{
-    font-size: 1.5rem;
-    text-decoration: line-through;
-    font-weight: lighter;
-}
+
 
 .menu .box-container .box:hover{
     background:#fff;
@@ -440,8 +434,8 @@ section{
 }
 
 .porfolio .box-container .box .content .title{
-    font-size: 2.5rem;
-    line-height: 1.5;
+    font-size: 2rem;
+    line-height: .5;
     color:#fff;
 }
 
@@ -543,7 +537,9 @@ section{
         margin-top: 20px;
     }
 
-    .menu-btn i.active:before{
+
+
+    #menu-btn i.active:before{
         content: "\f00d";
     }
 
@@ -567,9 +563,11 @@ section{
         font-size: 20px;
     }
 
-    nav ul.show{
+    .active#sidemenu nav ul{
         left: 0;
     }
+
+
 
 }
 
@@ -634,7 +632,7 @@ section{
     }  
     
     #about .row .content p{
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         color:#fff;
         padding:1rem 0;
         line-height: 1.8;
