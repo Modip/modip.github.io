@@ -6,10 +6,13 @@ menubtn.onclick = function(){
     sidemenu.classList.toggle('active');
 }
 
+
+
+
 document.onclick = function(clickEvent){
     if(clickEvent.target.id !== "menu-btn" && clickEvent.target.id !== "sidemenu"){
        
-        menubtn.classList.toggle('active'); 
-        sidemenu.classList.toggle('active');
+        menubtn.classList.remove('active'); 
+        sidemenu.classList.remove('active');
     }
 }
