@@ -190,10 +190,11 @@ section{
 
 
 .home{
-    
-    min-height: 100vh;
+   
     display: flex;
     align-items: center;
+    margin-bottom: 40px;
+    margin-top: 50px;
     background-position-x: -1
 }
 .home .row{
@@ -216,7 +217,6 @@ section{
 
 .home .content{
     width: 35%;
-    /* max-width: 60rem; */
 }
 
 .home .content h3{
@@ -232,6 +232,7 @@ section{
     line-height: 1.8;
     padding:1rem 0;
     color:#eee;
+    text-transform: none;
     
 }
 
@@ -304,9 +305,7 @@ section{
 
 #about .row .content a{
     margin-left: 10px;
-    text-align: center;
-
-    
+    text-align: center;   
 }  
 
 #about .row .content p{
@@ -314,6 +313,7 @@ section{
     font-weight: lighter;
     line-height: 1.8;
     padding:1rem 0;
+    text-transform: none;
     color:#eee;
 }
 .tab-titles{
@@ -354,6 +354,7 @@ section{
     bottom: -8px;
     transition: 2s;
 }
+
 .tab-links.active-link::after{
     width: 50%;
 }
@@ -439,7 +440,7 @@ section{
 }
 
 .porfolio .box-container .box .image{
-    height: 25rem;
+    height: 40rem;
     overflow:hidden;
     width: 100%;
 }
@@ -544,7 +545,7 @@ section{
         .max-width {
         width: 1180px;
     };
-    .about-col-1{
+    .about .content .about-col-1{
         flex-basis: 30%;
         width: 100%;
         background:var(--black);
@@ -552,20 +553,20 @@ section{
         color: #13131a;
     }
     
-    .about-col-1 img{
+    .about .content .about-col-1 img{
         width: 280px;
         height: 400px;
         object-fit: cover;
     
     }
-    .about-col-2{
+    .about .content .about-col-2{
         flex-basis: 60%;
         background:var(--black);
         border-radius: 15px;
         
     }
 
-    #about .row .content h3{
+    .about .row .content h3{
         font-size: 2rem;
         color:#fff;
         margin: 5 10px;
@@ -589,7 +590,7 @@ section{
     .max-width{
         width: 1120px;
     }
-    .about-col-1{
+    .about .content .about-col-1{
         flex-basis: 20%;
         width: 100%;
         background:var(--bg);
@@ -597,13 +598,13 @@ section{
         color: #13131a;
     }
     
-    .about-col-1 img{
+    .about .content .about-col-1 img{
         width: 300px;
         height: 410px;
         object-fit: cover;
     
     }
-    .about-col-2{
+    .about .content .about-col-2{
         flex-basis: 62%;
         background:var(--black);
         border-radius: 15px;
@@ -777,9 +778,6 @@ section{
 
     /* About section */
 
- 
-
-
     .about-col-1{
         
         width: 30%;
@@ -813,6 +811,19 @@ section{
         width: 830px;
         padding: 0 15px;
     }
+
+    .home .content h3{
+        
+        font-size: 3.5rem;
+
+    }
+    
+    .home .content p{
+        font-size: 18px;
+        line-height: 1.7;  
+        
+    }
+    
     .home .profil-img img{
         height: 300px;
         width: 300px;
@@ -834,7 +845,7 @@ section{
     
     }
     .about-col-2{
-        width: 20%;
+        width: 30%;
         background:var(--black);
         border-radius: 15px;
         
@@ -887,21 +898,30 @@ section{
         letter-spacing: .5rem;
     }
 
-
+    #about .about-title{
+        padding-left:30px;
+        padding-right: 0px;
+        padding-bottom: 3px;
+    }
     #about .row{
         justify-content: center;
+        padding: 0%;
+        margin: 0%;
     }
 
     .about-col-1{
-        display: flex;
-        width: 100%;
+
+        width: 45%;
         margin-bottom: 10px;
         border-radius: 15px;
         background: #020312;
     }
     
     .about-col-1 img{
-        display: flex;
+        height: 350px;
+        width: 250px;
+        padding-right: 10px;
+        padding-bottom: 0px;
         background: #020312;
         margin:0 20px; 
         border-radius: 15px;
@@ -910,20 +930,29 @@ section{
     }
     .about-col-2{
         flex: 100%;
+        width: 55%;
         background:var(--black);
         border-radius: 15px;
+        padding: 0%;
+        margin: 0%;
         
         
     }
     #about .row .content h3{
         margin: 5px 10px;
     }
+
+    #about .row .content .btn{
+        margin-bottom: 25px;
+        margin-left: 150px;
+        font-size: 15px;
+    }
 }
 
 @media (max-width:450px){
 
     .max-width{
-        max-width: 550px;
+        max-width: 430px;
         margin: 0px;
         
     }
@@ -956,22 +985,24 @@ section{
     }
 
 
-    
     #about .row{
-        padding: 0px;
-        margin: 0px;
+        justify-content: center;
+        padding: 0%;
+        margin: 0%;
     }
-
     .about-col-1{
-        display: flex;
-        width: 100%;
+
+        width: 40%;
         margin-bottom: 10px;
         border-radius: 15px;
         background: #020312;
     }
     
     .about-col-1 img{
-        display: flex;
+        height: 250px;
+        width: 150px;
+        padding-right: 10px;
+        padding-bottom: 0px;
         background: #020312;
         margin:0 20px; 
         border-radius: 15px;
@@ -979,23 +1010,82 @@ section{
     
     }
     .about-col-2{
-        width: 300px;
-        /* flex: 100%; */
+        flex: 100%;
+        width: 60%;
         background:var(--black);
         border-radius: 15px;
+        padding: 0%;
+        margin: 0%;
         
         
     }
     #about .row .content h3{
         margin: 5px 10px;
     }
-   
 
-
+    #about .row .content .btn{
+        margin-bottom: 25px;
+        margin-left: 110px;
+        font-size: 15px;
+    }
 
 }
 
 
+@media (max-width:350px) {
+    .max-width{
+        width: 340px;
+    }
+    #about .row{
+        justify-content: center;
+        padding: 0%;
+        margin: 0%;
+    }
+    .about-col-1{
+
+        width: 50%;
+        margin-bottom: 10px;
+        border-radius: 15px;
+        background: #020312;
+    }
+    
+    .about-col-1 img{
+        height: 200px;
+        width: 100px;
+        padding-right: 10px;
+        padding-bottom: 0px;
+        background: #020312;
+        margin:0 20px; 
+        border-radius: 15px;
+    
+    
+    }
+    .about-col-2{
+        flex: 100%;
+        width: 50%;
+        background:var(--black);
+        border-radius: 15px;
+        padding: 0%;
+        margin: 0%;
+        
+        
+    }
+    #about .row .content h3{
+        margin: 5px 10px;
+    }
+
+    #about .row .content p{
+        font-size: 14px;
+        padding:1rem 0;
+        line-height: 1.6;
+        margin-left: 10px;
+    }
+    #about .row .content .btn{
+        margin-bottom: 25px;
+        margin-left: 100px;
+        font-size: 10px;
+    }
+}
 /* All .max-width 
  1104
 
