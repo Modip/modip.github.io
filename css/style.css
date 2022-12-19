@@ -813,7 +813,7 @@ section{
     }
 
     .home .content h3{
-        
+
         font-size: 3.5rem;
 
     }
@@ -955,6 +955,10 @@ section{
         max-width: 430px;
         margin: 0px;
         
+    }
+
+    nav ul{
+        width: 70%;
     }
     .home .content h3{
         padding-top: 100px;
