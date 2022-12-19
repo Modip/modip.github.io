@@ -4,165 +4,169 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modip porfolio</title>
+    <title>complete responsive porfolio</title>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
 </head>
 <body>
     
-    <!-- header section starts  -->
+<!-- header section starts  -->
 
-    <header class="header">
-        <div id="sidemenu">
-            <nav class="navbar">
-                    <ul class="menu">
-                        <li><a href="#home" class="link">home</a></li>
-                        <li><a href="#about" class="link">about</a></li> 
-                        <li><a href="#porfolio"class="link">porfolio</a></li> 
-                        <li><a href="#contact" class="link">contact</a></li>
+<header class="header">
+    <div id="sidemenu">
+        <nav class="navbar">
+                <ul class="menu">
+                    <li><a href="#home" class="link">home</a></li>
+                    <li><a href="#about" class="link">about</a></li> 
+                    <li><a href="#porfolio"class="link">porfolio</a></li> 
+                    <li><a href="#contact" class="link">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="menu-btn" id="menu-btn">
+        <!-- <i class="fas fa-bars"></i> -->
+    </div>
+   
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+    
+    <div class="content">
+        <h3>Hi there i am Modip</h3>
+        <p>I am web and mobile developer,<br> Technologies enthousiast.
+             <br> I m also physcics enthousiast.</p>
+        <a href="#about" class="btn">About Me</a>
+    </div>
+    <div class="profil-img">
+        <img src="./images/modipprofile2-removebg-preview.png" alt="">
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span>about</span> me </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/modip.png" alt="">
+        </div>
+
+        <div class="content">
+            <h3>I can help you for your projects</h3>
+            <p>I learned web and mobile development at Simplon Senegal. This training has allowed me to become autonomous. Thus I can quickly rise in competence on various technologies</p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            </div>
+            <div class="tab-contents active-tab" id="education">
+                <ul>
+                    <li>
+                        <span>2020-2021</span><br>certificate Web and Mobile developer at Simplon Senegal
+                    </li>
+                    <li>
+                        <span>2018</span><br> License Physics at Cheikh Anta DIOP university 
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="skills">
+                <ul>
+                    <li>
+                        <span>web development</span><br>Laravel, Django, html, css, js
+                    </li>
+                    <li>
+                        <span>mobile development</span><br> Flutter
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                    <ul>
+                        <li>
+                            <span>mobile development 2022</span><br>Mobile app development for android and ios
+                        </li>
+                        <li>
+                            <span>web mobile development 2022</span><br>Mobile app development for android and ios
+                        </li>
+                        <li>
+                            <span>web development 2021</span><br>Web app development
+                        </li>
                     </ul>
-                </div>
-            </nav>
-        </div>
-        <div class="menu-btn" id="menu-btn">
-            <!-- <i class="fas fa-bars"></i> -->
-        </div>
-       
-    </header>
-
-    <!-- header section ends -->
-
-    <!-- home section starts  -->
-
-    <section class="home" id="home">
-        <div class="max-width">
-            <div class="row">
-                <div class="content">
-                    <h3>Hi there i am Modip</h3>
-                    <p>I am web and mobile developer,<br> Technologies enthousiast. <br> I m also physcics enthousiast.</p>
-                    <a href="#about" class="btn">About Me</a>
-                </div>
-                <div class="profil-img">
-                    <img src="./images/modipprofile2-removebg-preview.png" alt="img-modip">
-                </div>
             </div>
-        </div>    
-    </section>
+            <a href="#about" class="btn">Download CV</a>
+    </div>
 
-    <section class="about" id="about" .>
-        <div class="max-width">
-            <h1 class="about-title"> <span>about</span> me </h1>
-                <div class="row">
-                    <div class="about-col-1">
-                        <img src="images/modip.jpg" alt="img-modip">
-                    </div>
-                    <div class="about-col-2">
-                        <div class="content">
-                            <h3>I can help you for your projects</h3>
-                            <p>I learned web and mobile development at Simplon Senegal. This training has allowed me to become autonomous. Thus I can quickly rise in competence on various technologies</p>
-                            <div class="tab-titles">
-                                <p class="tab-links active-link" onclick="opentab('education')">Education</p>
-                                <p class="tab-links" onclick="opentab('skills')">Skills</p>
-                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                            </div>
-                            <div class="tab-contents active-tab" id="education">
-                                <ul>
-                                    <li>
-                                        <span>2020-2021</span><br>certificate Web and Mobile developer at Simplon Senegal
-                                    </li>
-                                    <li>
-                                        <span>2018</span><br> License Physics at Cheikh Anta DIOP university 
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="tab-contents" id="skills">
-                                <ul>
-                                    <li>
-                                        <span>web development</span><br>Laravel, Django, html, css, js
-                                    </li>
-                                    <li>
-                                        <span>mobile development</span><br> Flutter
-                                    </li>
-                                </ul>
-                                </div>
-                                <div class="tab-contents" id="experience">
-                                    <ul>
-                                        <li>
-                                            <span>mobile development 2022</span><br>Mobile app development for android and ios
-                                        </li>
-                                        <li>
-                                            <span>web mobile development 2022</span><br>Mobile app development for android and ios
-                                        </li>
-                                        <li>
-                                            <span>web development 2021</span><br>Web app development
-                                        </li>
-                                    </ul>
-                    
-                                </div>
-                                <a href="#" class="btn">Download CV</a>
-                            </div>
-                    </div>
-                
-                </div>
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+
+<!-- porfolio section starts  -->
+
+<section class="porfolio" id="porfolio">
+
+    <h1 class="heading"> por <span>folio</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="images/porfolio-img-1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3 class="title">Mobile application library</h3>
+                <span>realize with flutter and node js</span>
+                <p>application to list books read or to be read.</p>
+                <a href="https://github.com/Modip/modip_books_flutter" target="_blank" class="btn">see the github</a>
             </div>
         </div>
-    </section>
-    <!-- porfolio section starts  -->
 
-    <section class="porfolio" id="porfolio">
-
-        <h1 class="heading">por<span> folio </span> </h1>
-
-        <div class="box-container">
-            <div class="box">
-                <div class="image">
-                    <img src="images/modipbook1.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3 class="title">Mobile application library</h3>
-                    <span>realize with flutter and node js</span>
-                    <p>application to list books read or to be read.</p>
-                    <a href="https://github.com/Modip/modip_books_flutter" target="_blank" class="btn">see the github</a>
-                </div>
+        <div class="box">
+            <div class="image">
+                <img src="images/porfolio-img-2.jpg" alt="">
             </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/cfp.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3 class="title">Mobile application school</h3>
-                    <span>realize with flutter and laravel</span> 
-                    <p>application for a higher education institution</p>
-                    <a href="https://github.com/Modip/CFP_Flutter" target="_blank" class="btn">see the github</a>
-
-                </div>
+            <div class="content">
+                <h3 class="title">Mobile application school</h3>
+                <span>realize with flutter and laravel</span> 
+                <p>application for a higher education institution</p>
+                <a href="https://github.com/Modip/CFP_Flutter" target="_blank" class="btn">see the github</a>
             </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/salma.png" alt="">
-                </div>
-                <div class="content">
-                    <h3 class="title">Design</h3>
-                    <span>Disign with figma</span>
-                    <p>women's day a small design to pay tribute to them </p>
-                    
-                    <a href="#" class="btn">read more</a>
-                </div>
-            </div>
-
         </div>
-</section> 
+
+        <div class="box">
+            <div class="image">
+                <img src="images/porfolio-img-3.png" alt="">
+            </div>
+            <div class="content">
+                <h3 class="title">Design</h3>
+                <span>Disign with figma</span>
+                <p>women's day a small design to pay tribute to them </p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
 
 <!-- porfolio section ends -->
-
 
 <!-- contact section starts  -->
 
@@ -171,8 +175,8 @@
     <h1 class="heading"> <span>contact</span> me </h1>
 
     <div class="row">
-
         <form action="">
+            <h3>get in touch</h3>
             <div class="inputBox">
                 <span class="fas fa-user"></span>
                 <input type="text" placeholder="name">
@@ -194,15 +198,16 @@
 
 <!-- contact section ends -->
 
-
 <!-- footer section starts  -->
 
 <section class="footer">
 
     <div class="share">
-        <a href="https://www.linkedin.com/in/modip/" target="_blank" class="fab fa-linkedin"></a>
-        <a href="https://twitter.com/mordip6" target="_blank" class="fab fa-twitter"></a>
-        <a href="https://github.com/Modip/" target="_blank" class="fab fa-github"></a>
+       
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-github"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        
     </div>
 
     <div class="links">
@@ -210,20 +215,17 @@
         <a href="#about">about</a>
         <a href="#porfolio">porfolio</a>
         <a href="#contact">contact</a>
-       
     </div>
 
-    <div class="credit">created by <span>Modip</span></div>
+    <div class="credit">created by <span>modip</span></div>
 
 </section>
 
 <!-- footer section ends -->
 
 
-
 <!-- custom js file link  -->
-<script src="js/script.js">
-</script>
+<script src="js/script.js"></script>
 <script>
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
