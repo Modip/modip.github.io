@@ -162,9 +162,6 @@ section{
 }
 
 
-
-
-
 .home{
     min-height: 100vh;
     display: flex;
@@ -196,7 +193,7 @@ section{
     font-size: 6rem;
     text-transform: uppercase;
     color:#fff;
-    text-transform: none;
+
 }
 
 .home .content p{
@@ -205,6 +202,7 @@ section{
     line-height: 1.8;
     padding:1rem 0;
     color:#eee;
+    text-transform: none;
 }
 
 .about .row{
