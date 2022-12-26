@@ -409,6 +409,15 @@ section{
     background:none;
 }
 
+.contact .row form .inputBox textarea{
+    width: 100%;
+    padding:2rem;
+    font-size: 1.7rem;
+    color:#fff;
+    text-transform: none;
+    background:none;
+
+}
 
 .footer{
     background:var(--black);
