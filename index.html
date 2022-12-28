@@ -107,7 +107,7 @@
                         </li>
                     </ul>
             </div>
-            <a href="#about" class="btn">Download CV</a>
+            <a href="images/cv_Mor_DIOP_en.pdf" class="btn">Download CV</a>
     </div>
 
     </div>
@@ -173,22 +173,22 @@
     <h1 class="heading"> <span>contact</span> me </h1>
 
     <div class="row">
-        <form action="">
+        <form name="submit-to-google-sheet">
             <h3>get in touch</h3>
             <div class="inputBox">
                 <span class="fas fa-user"></span>
-                <input type="text" placeholder="name" required>
+                <input type="text" name="Name" placeholder="name" required>
             </div>
             <div class="inputBox">
                 <span class="fas fa-envelope"></span>
-                <input type="email" placeholder="email" required>
+                <input type="email" name="Email" placeholder="email" required>
             </div>
             <div class="inputBox">
                 <span class="fas fa-phone"></span>
-                <input type="number" placeholder="number">
+                <input type="number" name="Phone" placeholder="number">
             </div>
             <div class="inputBox">
-                <textarea name="message" id=""  rows="6" placeholder="your message"></textarea>
+                <textarea name="Message" rows="6" placeholder="your message"></textarea>
             </div>
             
             <input type="submit" value="contact now" class="btn">
@@ -242,6 +242,7 @@
         document.getElementById(tabname).classList.add("active-tab");
     }
 </script>
+
 
 </body>
 </html>
