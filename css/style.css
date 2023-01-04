@@ -245,7 +245,6 @@ section{
 .tab-titles{
     display: flex;
     margin: 5px 0 10px;
-    margin-left: 10px;
     font-weight: 550;
     transition: all .40s ease; 
     color:  var(--text-color);
